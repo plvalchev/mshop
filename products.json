@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "name": "Chanel N°5",
+        "brand": "Chanel",
+        "category": "floral",
+        "gender": "women",
+        "price": 45,
+        "description": "The iconic fragrance in a collectible miniature. Timeless elegance in floral aldehydic notes.",
+        "image": "https://via.placeholder.com/280x280/f4e4d7/8b6f47?text=Chanel+N°5",
+        "vendoraUrl": "#"
+    },
+    {
+        "id": 2,
+        "name": "Dior Sauvage",
+        "brand": "Dior",
+        "category": "fresh",
+        "gender": "men",
+        "price": 38,
+        "description": "A fresh and woody composition. Rare miniature edition perfect for collectors.",
+        "image": "https://via.placeholder.com/280x280/f4e4d7/8b6f47?text=Dior+Sauvage",
+        "vendoraUrl": "#"
+    },
+    {
+        "id": 3,
+        "name": "Tom Ford Black Orchid",
+        "brand": "Tom Ford",
+        "category": "oriental",
+        "gender": "unisex",
+        "price": 65,
+        "description": "Luxurious and sensual oriental fragrance. Limited edition miniature.",
+        "image": "https://via.placeholder.com/280x280/f4e4d7/8b6f47?text=Black+Orchid",
+        "vendoraUrl": "#"
+    },
+    {
+        "id": 4,
+        "name": "Versace Eros",
+        "brand": "Versace",
+        "category": "fresh",
+        "gender": "men",
+        "price": 32,
+        "description": "Fresh and masculine fragrance. Collectible miniature bottle.",
+        "image": "https://via.placeholder.com/280x280/f4e4d7/8b6f47?text=Versace+Eros",
+        "vendoraUrl": "#"
+    },
+    {
+        "id": 5,
+        "name": "Yves Saint Laurent Black Opium",
+        "brand": "YSL",
+        "category": "oriental",
+        "gender": "women",
+        "price": 42,
+        "description": "Addictive coffee and vanilla notes. Rare miniature for collectors.",
+        "image": "https://via.placeholder.com/280x280/f4e4d7/8b6f47?text=Black+Opium",
+        "vendoraUrl": "#"
+    },
+    {
+        "id": 6,
+        "name": "Gucci Bloom",
+        "brand": "Gucci",
+        "category": "floral",
+        "gender": "women",
+        "price": 40,
+        "description": "Rich white floral fragrance. Beautiful collectible miniature.",
+        "image": "https://via.placeholder.com/280x280/f4e4d7/8b6f47?text=Gucci+Bloom",
+        "vendoraUrl": "#"
+    },
+    {
+        "id": 7,
+        "name": "Paco Rabanne 1 Million",
+        "brand": "Paco Rabanne",
+        "category": "spicy",
+        "gender": "men",
+        "price": 35,
+        "description": "Spicy leather fragrance. Iconic gold bar bottle in miniature.",
+        "image": "https://via.placeholder.com/280x280/f4e4d7/8b6f47?text=1+Million",
+        "vendoraUrl": "#"
+    },
+    {
+        "id": 8,
+        "name": "Jo Malone Wood Sage & Sea Salt",
+        "brand": "Jo Malone",
+        "category": "fresh",
+        "gender": "unisex",
+        "price": 55,
+        "description": "Fresh and earthy scent. Elegant miniature bottle.",
+        "image": "https://via.placeholder.com/280x280/f4e4d7/8b6f47?text=Wood+Sage",
+        "vendoraUrl": "#"
+    },
+    {
+        "id": 9,
+        "name": "Lancôme La Vie Est Belle",
+        "brand": "Lancôme",
+        "category": "floral",
+        "gender": "women",
+        "price": 48,
+        "description": "Sweet floral gourmand fragrance. Exquisite miniature crystal bottle.",
+        "image": "https://via.placeholder.com/280x280/f4e4d7/8b6f47?text=La+Vie+Est+Belle",
+        "vendoraUrl": "#"
+    },
+    {
+        "id": 10,
+        "name": "Giorgio Armani Acqua di Gio",
+        "brand": "Armani",
+        "category": "fresh",
+        "gender": "men",
+        "price": 36,
+        "description": "Aquatic fresh fragrance. Classic miniature for collectors.",
+        "image": "https://via.placeholder.com/280x280/f4e4d7/8b6f47?text=Acqua+di+Gio",
+        "vendoraUrl": "#"
+    },
+    {
+        "id": 11,
+        "name": "Viktor & Rolf Flowerbomb",
+        "brand": "Viktor & Rolf",
+        "category": "floral",
+        "gender": "women",
+        "price": 52,
+        "description": "Intense floral explosion. Grenade-shaped miniature bottle.",
+        "image": "https://via.placeholder.com/280x280/f4e4d7/8b6f47?text=Flowerbomb",
+        "vendoraUrl": "#"
+    },
+    {
+        "id": 12,
+        "name": "Burberry Brit",
+        "brand": "Burberry",
+        "category": "fruity",
+        "gender": "women",
+        "price": 34,
+        "description": "Fresh fruity fragrance with pear and peony. Charming miniature.",
+        "image": "https://via.placeholder.com/280x280/f4e4d7/8b6f47?text=Burberry+Brit",
+        "vendoraUrl": "#"
+    }
+]
