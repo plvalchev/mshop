@@ -16,9 +16,9 @@ A beautiful, modern static website showcasing a curated collection of miniature 
 
 ## Collection Stats
 
-- **36 Premium Miniatures** currently featured (186+ available on Vendora)
-- **Brands:** Versace, Lancôme, Prada, Yves Rocher, Ferragamo, Givenchy, DKNY, Burberry, and more
-- **Price Range:** €3 - €160
+- **70 Premium Miniatures** currently featured (186+ available on Vendora)
+- **Brands:** Versace, Lancôme, Prada, Yves Rocher, Ferragamo, Givenchy, DKNY, Burberry, Dior, Chanel, Chopard, and more
+- **Price Range:** €7 - €160
 - **Categories:** Floral, Fresh, Woody, Oriental, Fruity
 - **All authentic, carefully curated items**
 
