@@ -27,12 +27,12 @@ class VendoraUserScraper:
     def __init__(self, user_id, max_pages=10):
         self.user_id = user_id
         self.max_pages = max_pages
-        self.base_url = f"http://vendora.bg/users/{user_id}"
+        self.base_url = f"https://vendora.bg/users/{user_id}"
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
+            'Accept-Language': 'bg-BG,bg;q=0.9,en;q=0.8',
             'Connection': 'keep-alive',
         })
         self.products = []
