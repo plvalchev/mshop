@@ -241,7 +241,7 @@ class PerfumeShop {
                 <div class="product-category">${this.formatCategory(product.category)} • ${this.formatGender(product.gender)}</div>
                 <p class="product-description">${product.description}</p>
                 <div class="product-footer">
-                    <div class="product-price">$${product.price}</div>
+                    <div class="product-price">€${product.price}</div>
                     <a href="${product.vendoraUrl}" target="_blank" rel="noopener" class="btn">View on Vendora</a>
                 </div>
             </div>

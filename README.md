@@ -1,6 +1,9 @@
-# Mini Perfume Collection - Static Website
+# Panagiota's Mini Perfume Collection
 
-A beautiful, modern static website for showcasing and organizing miniature perfume collections. Perfect for collectors who want to market their items on Vendora with better organization and filtering capabilities.
+A beautiful, modern static website showcasing a curated collection of miniature perfumes from prestigious brands. This site serves as a marketing frontend for Vendora listings, providing enhanced browsing with filters and categories.
+
+**Live Site:** [Your GitHub Pages URL]
+**Vendora Shop:** [Panagiota on Vendora](http://vendora.bg/users/214xqq) - Bronze Super Seller ⭐ 5.0 (107 reviews)
 
 ## Features
 
@@ -11,9 +14,13 @@ A beautiful, modern static website for showcasing and organizing miniature perfu
 - **Easy Product Management**: Simple JSON-based product catalog
 - **OG Tag Scraping**: Python script to automatically sync products from Vendora URLs
 
-## Demo
+## Collection Stats
 
-Visit the live site: [Your GitHub Pages URL will be here]
+- **36 Premium Miniatures** currently featured (186+ available on Vendora)
+- **Brands:** Versace, Lancôme, Prada, Yves Rocher, Ferragamo, Givenchy, DKNY, Burberry, and more
+- **Price Range:** €3 - €160
+- **Categories:** Floral, Fresh, Woody, Oriental, Fruity
+- **All authentic, carefully curated items**
 
 ## How It Works
 
