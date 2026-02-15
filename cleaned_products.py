@@ -183,6 +183,12 @@ raw_products = [
         "image": "https://bcdn.vendora.gr/0/10/98/1098a62183bc1a72c7fe6c67d07f443d9c7060c8.jpg?class=mrec"
     },
     {
+        "url": "/jpq5yqk/one-essence-calvin-klein-intense-mini-aromatiko-kenourio-10-ml.html",
+        "name_bg": "One Essence Calvin Klein Intense μίνι αρωματικό, καινούριο, 10 ml",
+        "price": 20.0,
+        "image": "https://bcdn.vendora.gr/0/37/75/3775c797840b1446d8dd87a999422e0658a17f1a.jpg?class=mrec"
+    },
+    {
         "url": "/mmp7zng/sergio-tacchini-miniatoura-aromatos-kenouria-8-ml-toalet-nero.html",
         "name_bg": "Sergio Tacchini μινιατούρα αρώματος καινούρια, 8 ml, τοαλέτ νερό",
         "price": 19.0,
@@ -193,12 +199,6 @@ raw_products = [
         "name_bg": "Μινιατούρα αρώματος Les Belles Nina Ricci καινούρια, 4 ml τοαλέτα νερό",
         "price": 16.0,
         "image": "https://bcdn.vendora.gr/0/df/cf/dfcfa94bdc386a5332191c9f24f60439ccd5b099.jpg?class=mrec"
-    },
-    {
-        "url": "/jpq5yqk/one-essence-calvin-klein-intense-mini-aromatiko-kenourio-10-ml.html",
-        "name_bg": "One Essence Calvin Klein Intense μίνι αρωματικό, καινούριο, 10 ml",
-        "price": 20.0,
-        "image": "https://bcdn.vendora.gr/0/37/75/3775c797840b1446d8dd87a999422e0658a17f1a.jpg?class=mrec"
     },
     {
         "url": "/wm3p9dg/very-valentino-mini-aroma-neo-sillektiko-45-ml.html",
