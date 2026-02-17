@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120" id="logo-horizontal">
+                        <!-- Icon -->
+                        <circle cx="60" cy="60" r="55" fill="none" stroke="#d4af37" stroke-width="2.5"/>
+                        <text x="60" y="72" text-anchor="middle" font-family="serif" font-size="32" fill="#d4af37" font-weight="300" letter-spacing="1">LPF</text>
+                        <circle cx="100" cy="25" r="12" fill="#d4af37"/>
+                        <text x="100" y="31" text-anchor="middle" font-size="12" fill="#1a1a1a">✦</text>
+                        <!-- Text -->
+                        <text x="140" y="55" font-family="serif" font-size="28" fill="#1a1a1a" font-weight="400" letter-spacing="4">LE PETIT FLACON</text>
+                        <text x="140" y="80" font-family="serif" font-size="14" fill="#666" font-style="italic">Treasures in Miniature</text>
+                    </svg>

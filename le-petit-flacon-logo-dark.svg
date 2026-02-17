@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" id="logo-dark">
+                        <circle cx="100" cy="100" r="95" fill="none" stroke="#f4e5c3" stroke-width="3"/>
+                        <text x="100" y="115" text-anchor="middle" font-family="serif" font-size="48" fill="#f4e5c3" font-weight="300" letter-spacing="2">LPF</text>
+                        <circle cx="165" cy="35" r="20" fill="#d4af37"/>
+                        <text x="165" y="43" text-anchor="middle" font-size="20" fill="#1a1a1a">✦</text>
+                    </svg>

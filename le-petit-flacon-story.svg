@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="320" viewBox="0 0 1080 1920" id="story">
+                        <!-- Background -->
+                        <rect width="1080" height="1920" fill="url(#storyGrad)"/>
+                        <defs>
+                            <linearGradient id="storyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#faf8f3;stop-opacity:1"/>
+                                <stop offset="100%" style="stop-color:#e8d5d1;stop-opacity:1"/>
+                            </linearGradient>
+                        </defs>
+                        
+                        <!-- Top logo -->
+                        <circle cx="540" cy="250" r="80" fill="none" stroke="#d4af37" stroke-width="4"/>
+                        <text x="540" y="270" text-anchor="middle" font-family="serif" font-size="52" fill="#d4af37" font-weight="300">LPF</text>
+                        <circle cx="605" cy="195" r="20" fill="#d4af37"/>
+                        
+                        <!-- Content area placeholder -->
+                        <rect x="140" y="450" width="800" height="900" fill="white" rx="20" opacity="0.9"/>
+                        <text x="540" y="920" text-anchor="middle" font-family="sans-serif" font-size="36" fill="#999" opacity="0.5">Your Content Here</text>
+                        
+                        <!-- Bottom branding -->
+                        <text x="540" y="1700" text-anchor="middle" font-family="serif" font-size="48" fill="#1a1a1a" letter-spacing="6">LE PETIT FLACON</text>
+                        <text x="540" y="1760" text-anchor="middle" font-family="serif" font-size="28" fill="#666" font-style="italic">Treasures in Miniature</text>
+                    </svg>
