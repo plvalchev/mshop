@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium miniature perfumes collection for collectors - Browse exclusive mini perfumes from Versace, Lancôme, Prada, and more">
-    <meta name="keywords" content="miniature perfumes, mini perfumes, perfume collection, collectible perfumes, vintage perfumes">
-    <title>Panagiota's Mini Perfume Collection - Collector's Paradise</title>
+    <meta name="description" content="Le Petit Flacon — Curated miniature perfumes for collectors. Rare and authentic miniatures from Versace, Lancôme, Prada, Dior, Chanel and more.">
+    <meta name="keywords" content="miniature perfumes, mini perfumes, perfume collection, collectible perfumes, Le Petit Flacon, vintage perfumes">
+    <title>Le Petit Flacon — Treasures in Miniature</title>
+    <link rel="icon" type="image/svg+xml" href="le-petit-flacon-favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <h1>🌸 Panagiota's Mini Perfumes</h1>
-                    <p class="tagline">Curated Miniatures for Collectors</p>
-                </div>
+                <a href="#" class="logo">
+                    <img src="le-petit-flacon-logo-dark.svg" alt="Le Petit Flacon" class="logo-img">
+                    <div class="logo-text">
+                        <span class="brand-name">Le Petit Flacon</span>
+                        <span class="brand-tagline">Treasures in Miniature</span>
+                    </div>
+                </a>
                 <nav class="nav">
                     <a href="#collection">Collection</a>
                     <a href="#about">About</a>
@@ -32,24 +36,36 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h2>Discover Rare & Collectible Miniature Perfumes</h2>
-                <p>Your curated collection of premium mini perfumes from world-renowned brands</p>
+            <div class="hero-logo">
+                <img src="le-petit-flacon-logo-primary.svg" alt="Le Petit Flacon">
             </div>
+            <div class="hero-content">
+                <p class="eyebrow">Curated Miniatures for Collectors</p>
+                <h2>Discover Rare &amp; Collectible<br>Miniature Perfumes</h2>
+                <p>An expertly curated selection of authentic miniature perfumes from the world's most prestigious fragrance houses</p>
+            </div>
+            <div class="hero-divider"></div>
         </div>
     </section>
 
-    <!-- Filters Section -->
+    <!-- Collection Section -->
     <section class="filters-section" id="collection">
         <div class="container">
+
+            <div class="section-header">
+                <h2>The Collection</h2>
+                <p class="section-sub">Browse &amp; filter 186+ authenticated miniatures</p>
+                <div class="section-divider"></div>
+            </div>
+
             <div class="filters">
                 <div class="filter-group">
-                    <label for="search">Search:</label>
-                    <input type="text" id="search" placeholder="Search perfumes...">
+                    <label for="search">Search</label>
+                    <input type="text" id="search" placeholder="Perfume name, brand…">
                 </div>
 
                 <div class="filter-group">
-                    <label for="category">Category:</label>
+                    <label for="category">Category</label>
                     <select id="category">
                         <option value="all">All Categories</option>
                         <option value="floral">Floral</option>
@@ -62,14 +78,14 @@
                 </div>
 
                 <div class="filter-group">
-                    <label for="brand">Brand:</label>
+                    <label for="brand">Brand</label>
                     <select id="brand">
                         <option value="all">All Brands</option>
                     </select>
                 </div>
 
                 <div class="filter-group">
-                    <label for="gender">Gender:</label>
+                    <label for="gender">Gender</label>
                     <select id="gender">
                         <option value="all">All</option>
                         <option value="women">Women</option>
@@ -79,7 +95,7 @@
                 </div>
 
                 <div class="filter-group">
-                    <label for="price">Max Price:</label>
+                    <label for="price">Max Price</label>
                     <select id="price">
                         <option value="all">Any Price</option>
                         <option value="20">Under €20</option>
@@ -90,7 +106,7 @@
                 </div>
 
                 <div class="filter-group">
-                    <label for="sort">Sort By:</label>
+                    <label for="sort">Sort By</label>
                     <select id="sort">
                         <option value="name">Name</option>
                         <option value="price-low">Price: Low to High</option>
@@ -99,7 +115,7 @@
                     </select>
                 </div>
 
-                <button id="reset-filters" class="btn-reset">Reset Filters</button>
+                <button id="reset-filters" class="btn-reset">Reset</button>
             </div>
 
             <!-- Results Count -->
@@ -108,13 +124,11 @@
             </div>
 
             <!-- Products Grid -->
-            <div id="products-grid" class="products-grid">
-                <!-- Products will be dynamically loaded here -->
-            </div>
+            <div id="products-grid" class="products-grid"></div>
 
             <!-- Loading State -->
             <div id="loading" class="loading">
-                <p>Loading perfumes...</p>
+                <p>Loading the collection…</p>
             </div>
 
             <!-- No Results -->
@@ -122,18 +136,35 @@
                 <p>No perfumes found matching your criteria.</p>
                 <button onclick="document.getElementById('reset-filters').click()" class="btn">Reset Filters</button>
             </div>
+
         </div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <h2>About Our Collection</h2>
+            <h2>About the Collection</h2>
+            <p class="about-sub">Passion for miniature perfumery</p>
+            <div class="about-divider"></div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Welcome to my curated collection of miniature perfumes! As a passionate collector and Bronze Super Seller on Vendora with a 5.0 rating, I specialize in rare and authentic miniature perfumes.</p>
-                    <p>My collection features over 186 carefully selected miniatures from prestigious brands like Versace, Lancôme, Prada, Yves Rocher, and many rare vintage pieces. Each item is authentic and in excellent condition.</p>
-                    <p>Browse my collection here with convenient filters, then click through to Vendora to complete your purchase securely. Fast shipping and excellent customer service guaranteed!</p>
+                    <p>Welcome to Le Petit Flacon — a lovingly curated selection of authentic miniature perfumes for discerning collectors. Each piece is hand-picked for its rarity, condition, and olfactory significance.</p>
+                    <p>From vintage classics to contemporary treasures, the collection spans over 186 miniatures from prestigious houses including Versace, Lancôme, Prada, Yves Saint Laurent, Gucci, Dior, Chanel, and many more.</p>
+                    <p>Browse here, then complete your purchase securely on Vendora. Every item ships worldwide with care and speed.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">186+</div>
+                        <div class="stat-label">Miniatures</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5.0</div>
+                        <div class="stat-label">Seller Rating</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">✦</div>
+                        <div class="stat-label">Bronze Super Seller</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,16 +174,19 @@
     <section class="contact" id="contact">
         <div class="container">
             <h2>Get in Touch</h2>
-            <p>Have questions about our collection? Want to know more about a specific item?</p>
-            <p>Visit my <a href="http://vendora.bg/users/214xqq" target="_blank" rel="noopener">Vendora profile</a> to see all 186+ items and message me directly. I respond quickly and ship worldwide!</p>
+            <p class="contact-sub">We'd love to hear from you</p>
+            <div class="contact-divider"></div>
+            <p>Have questions about a specific piece? Looking for something particular?</p>
+            <p>Visit the Vendora shop to see the full collection and message directly — fast replies and worldwide shipping guaranteed.</p>
+            <a href="http://vendora.bg/users/214xqq" target="_blank" rel="noopener" class="btn-contact">Visit Vendora Shop</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Panagiota's Mini Perfume Collection. All rights reserved.</p>
-            <p>Visit my shop: <a href="http://vendora.bg/users/214xqq" target="_blank" rel="noopener">Vendora - Panagiota (Bronze Super Seller ⭐ 5.0)</a></p>
+            <p>&copy; 2026 Le Petit Flacon. All rights reserved.</p>
+            <p>Shop on <a href="http://vendora.bg/users/214xqq" target="_blank" rel="noopener">Vendora</a> &mdash; Bronze Super Seller &middot; 5.0 rating</p>
         </div>
     </footer>
 
