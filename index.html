@@ -9,19 +9,20 @@
     <link rel="icon" type="image/svg+xml" href="le-petit-flacon-favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Tenor+Sans&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Ambient Background Effect -->
     <div class="ambient-bg"></div>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header-top">
                 <a href="#" class="logo">
-                    <span class="logo-mark">◆</span>
+                    <span class="logo-mark"></span>
                     <div class="logo-text">
                         <span class="logo-brand">Le Petit Flacon</span>
                         <span class="logo-tagline">Treasures in Miniature</span>
@@ -32,32 +33,61 @@
                     <a href="#about" class="nav-link">About</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </nav>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
+            <nav class="nav-drawer" id="nav-drawer">
+                <a href="#collection" class="nav-link">Collection</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
+        <!-- Decorative ghost text -->
+        <span class="hero-eyebrow" aria-hidden="true">Flacon</span>
+
         <div class="container">
-            <div class="hero-inner">
-                <h1 class="hero-title">Rare Miniatures<br><span class="hero-accent">for the Discerning Collector</span></h1>
-                <p class="hero-subtitle">An expertly curated selection of authentic miniature perfumes from the world's most prestigious fragrance houses. Browse 186+ authenticated pieces.</p>
-                <a href="#collection" class="hero-cta">Explore Collection</a>
+            <div class="hero-content">
+                <div class="hero-kicker">
+                    <span>186+ Authenticated Pieces</span>
+                </div>
+                <h1 class="hero-title">
+                    Rare Miniatures<br><em>for the Discerning</em><br>Collector
+                </h1>
+                <p class="hero-subtitle">An expertly curated selection of authentic miniature perfumes from the world's most prestigious fragrance houses. Each piece hand-picked for rarity, condition, and olfactory significance.</p>
+                <div class="hero-cta-group">
+                    <a href="#collection" class="hero-cta">
+                        <span>Explore Collection</span>
+                        <span class="hero-cta-arrow">→</span>
+                    </a>
+                    <span class="hero-count">From <strong>€14</strong> per piece</span>
+                </div>
             </div>
-            <div class="hero-divider"></div>
         </div>
+
     </section>
 
     <!-- Collection Section -->
     <section class="collection" id="collection">
         <div class="container">
-            <div class="collection-header">
-                <h2 class="section-title">The Collection</h2>
-                <p class="section-subtitle">Curate Your Treasures</p>
+            <div class="collection-header reveal">
+                <div class="collection-title-group">
+                    <h2 class="section-title">The Collection</h2>
+                    <p class="section-subtitle">Curate Your Treasures</p>
+                </div>
+                <div class="collection-meta">
+                    <div class="results-info">
+                        <span id="results-count">0</span> pieces found
+                    </div>
+                </div>
             </div>
 
             <!-- Filters -->
-            <div class="filters-wrapper">
+            <div class="filters-wrapper reveal reveal-delay-1">
                 <div class="filters">
                     <div class="filter-item">
                         <input type="text" id="search" class="filter-input" placeholder="Search by name, brand…">
@@ -98,15 +128,12 @@
                     <div class="filter-item">
                         <select id="sort" class="filter-select">
                             <option value="name">Sort: Name</option>
-                            <option value="price-low">Price: Low to High</option>
-                            <option value="price-high">Price: High to Low</option>
+                            <option value="price-low">Price: Low → High</option>
+                            <option value="price-high">Price: High → Low</option>
                             <option value="brand">Brand</option>
                         </select>
                     </div>
                     <button id="reset-filters" class="btn-reset">Reset</button>
-                </div>
-                <div class="results-info">
-                    <span id="results-count">0</span> pieces found
                 </div>
             </div>
 
@@ -130,12 +157,15 @@
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
+            <span class="about-number reveal" aria-hidden="true">186</span>
+
             <div class="about-inner">
-                <div class="about-left">
-                    <h2 class="section-title">About the Collection</h2>
+                <div class="about-left reveal">
+                    <h2 class="section-title">About the<br>Collection</h2>
+                    <div class="gold-line"></div>
                     <p class="section-subtitle">Passion for Miniature Perfumery</p>
                 </div>
-                <div class="about-right">
+                <div class="about-right reveal reveal-delay-2">
                     <p class="about-text">Welcome to Le Petit Flacon — a lovingly curated selection of authentic miniature perfumes for discerning collectors. Each piece is hand-picked for its rarity, condition, and olfactory significance.</p>
                     <p class="about-text">From vintage classics to contemporary treasures, our collection spans over 186 miniatures from prestigious houses including Versace, Lancôme, Prada, Yves Saint Laurent, Gucci, Dior, Chanel, and many more.</p>
                     <p class="about-text">Browse here, then complete your purchase securely on Vendora. Every item ships worldwide with care and speed.</p>
@@ -144,15 +174,15 @@
 
             <!-- Stats -->
             <div class="stats-grid">
-                <div class="stat-item">
+                <div class="stat-item reveal reveal-delay-1">
                     <div class="stat-number">186+</div>
                     <div class="stat-label">Authenticated Pieces</div>
                 </div>
-                <div class="stat-item">
+                <div class="stat-item reveal reveal-delay-2">
                     <div class="stat-number">5.0★</div>
                     <div class="stat-label">Seller Rating</div>
                 </div>
-                <div class="stat-item">
+                <div class="stat-item reveal reveal-delay-3">
                     <div class="stat-number">◆</div>
                     <div class="stat-label">Bronze Super Seller</div>
                 </div>
@@ -163,11 +193,15 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="contact-content">
+            <div class="contact-content reveal">
                 <h2 class="section-title">Get in Touch</h2>
+                <div class="gold-line"></div>
                 <p class="section-subtitle">Questions? We're Here to Help</p>
                 <p class="contact-text">Have questions about a specific piece? Looking for something particular? Visit the Vendora shop to see the full collection and message directly — fast replies and worldwide shipping guaranteed.</p>
-                <a href="http://vendora.bg/users/214xqq" target="_blank" rel="noopener" class="btn-primary">Visit Vendora Shop</a>
+                <a href="http://vendora.bg/users/214xqq" target="_blank" rel="noopener" class="btn-primary">
+                    <span>Visit Vendora Shop</span>
+                    <span>→</span>
+                </a>
             </div>
         </div>
     </section>
@@ -175,11 +209,14 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-copyright">&copy; 2026 Le Petit Flacon. All rights reserved.</p>
-            <p class="footer-credits">Bronze Super Seller on <a href="http://vendora.bg/users/214xqq" target="_blank" rel="noopener">Vendora</a> • 5.0 Rating • Worldwide Shipping</p>
+            <div class="footer-inner">
+                <p class="footer-copyright">&copy; 2026 Le Petit Flacon. All rights reserved.</p>
+                <p class="footer-credits">Bronze Super Seller on <a href="http://vendora.bg/users/214xqq" target="_blank" rel="noopener">Vendora</a> &nbsp;·&nbsp; 5.0 Rating &nbsp;·&nbsp; Worldwide Shipping</p>
+            </div>
         </div>
     </footer>
 
     <script src="app.js"></script>
+    <script src="animations.js"></script>
 </body>
 </html>

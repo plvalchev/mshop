@@ -17,19 +17,16 @@ class PerfumeShop {
     async loadProducts() {
         const loading = document.getElementById('loading');
         try {
-            // Try to load from products.json
             const response = await fetch('products.json');
             if (response.ok) {
                 this.products = await response.json();
             } else {
-                // If no products.json, use demo data
                 this.products = this.getDemoProducts();
             }
-            loading.style.display = 'none';
         } catch (error) {
             console.error('Error loading products:', error);
-            // Use demo data as fallback
             this.products = this.getDemoProducts();
+        } finally {
             loading.style.display = 'none';
         }
     }
@@ -226,19 +223,27 @@ class PerfumeShop {
             const card = this.createProductCard(product);
             grid.appendChild(card);
         });
+
+        // Trigger entrance animations
+        if (typeof window.animateProductCards === 'function') {
+            window.animateProductCards();
+        }
     }
 
     createProductCard(product) {
         const card = document.createElement('div');
         card.className = 'product-card';
 
+        const sizeBadge = product.size ? `<span class="product-size">${product.size}</span>` : '';
         card.innerHTML = `
-            <img src="${product.image}" alt="${product.name}" class="product-image"
-                 onerror="this.src='https://via.placeholder.com/280x280/f4e4d7/8b6f47?text=${encodeURIComponent(product.name)}'">
+            <div class="product-image-wrap">
+                <img src="${product.image}" alt="${product.name}" class="product-image"
+                     onerror="this.src='https://via.placeholder.com/280x280/1a1918/c9a55a?text=${encodeURIComponent(product.name)}'">
+            </div>
             <div class="product-info">
                 <div class="product-brand">${product.brand}</div>
                 <h3 class="product-name">${product.name}</h3>
-                <div class="product-category">${this.formatCategory(product.category)} • ${this.formatGender(product.gender)}</div>
+                <div class="product-category">${this.formatCategory(product.category)} &middot; ${this.formatGender(product.gender)}${sizeBadge ? ' &middot; ' + product.size : ''}</div>
                 <p class="product-description">${product.description}</p>
                 <div class="product-footer">
                     <div class="product-price">€${product.price}</div>
